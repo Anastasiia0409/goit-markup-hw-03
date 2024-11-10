@@ -16,6 +16,19 @@ ul, ol {
     list-style-type: none;
 }
 
+.container {
+    width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #FFFFFF;
+    height: 72px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+}
+
 .header-logo {
     font-family: 'Raleway', sans-serif;
     color: #4d5ae5;
@@ -34,6 +47,12 @@ ul, ol {
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-decoration: none;
+}
+
+.header-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .header_link {
@@ -75,6 +94,7 @@ ul, ol {
 
 .hero-section{
     background-color: #2E2F42;
+    height: 600px;
 }
 
 .hero-title {
@@ -127,12 +147,10 @@ ul, ol {
 
 .team-section {
     background-color: #F4F4FD;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    height: 732px;
 }
 
-.title_team {
+.team-title {
     color: #2E2F42;
     font-weight: 700;
     font-size: 36px;
@@ -140,33 +158,44 @@ ul, ol {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .team-foto {
     background-color:  #FFFFFF;
 }
 
-.name {
+.team-name {
     color: #2E2F42;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
-.subtitle {
+.team-subtitle {
    color: #434455;
    font-weight: 400;
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
+   text-align: center;
 }
 
 .portfolio-section {
     margin: 120px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
-.title_portfolio {
+.portfolio-title {
     color: #2E2F42;
     font-weight: 700;
     font-size: 36px;
@@ -176,20 +205,35 @@ ul, ol {
     text-align: center;
 }
 
-.caption {
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.porfolio-name {
+    padding: 32px 16px;
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+}
+
+.portfolio-caption {
     color: #2E2F42;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
-.subtitle_portfolio {
+.portfolio-subtitle {
     color: #434455;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .logo-footer {
