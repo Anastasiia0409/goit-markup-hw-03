@@ -23,6 +23,10 @@ ul, ol {
     display: flex;
 }
 
+.img {
+    display: block;
+}
+
 .header {
     background-color: #FFFFFF;
     height: 72px;
