@@ -105,7 +105,7 @@ ul, ol {
 .button:focus {
     background-color: #404BBF;
 }
-
+   
 .advantages-subtitle {
     color: #2e2f42;
     font-size: 20px;
@@ -127,6 +127,9 @@ ul, ol {
 
 .team-section {
     background-color: #F4F4FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .title_team {
