@@ -17,9 +17,10 @@ ul, ol {
 }
 
 .container {
-    width: 1440px;
+    width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+    display: flex;
 }
 
 .header {
@@ -46,11 +47,6 @@ ul, ol {
     margin-right: 76px;
 }
 
-.header-logo:nth-child(1) {
-    display: flex;
-    width: 1158px; 
-}
-
 .header-logo_accent {
     color: #2e2f42;
     font-weight: 700;
@@ -58,6 +54,7 @@ ul, ol {
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-decoration: none;
+    margin-right: 76px;
 }
 
 .header-item {
@@ -155,12 +152,8 @@ ul, ol {
     padding: 120px 0;
 }
 
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+.hidden {
+    visibility: hidden;
 }
 
 .advantages-list {
@@ -168,9 +161,10 @@ ul, ol {
     gap: 24px;
 }
 
-.advantages-item {
-    width: calc((100% - 72px) / 4); 
+.advantages-list :first-child {
+    width: calc((100% - 72px) / 4);
 }
+
 
 .advantages-subtitle {
     color: #2e2f42;
@@ -213,6 +207,10 @@ ul, ol {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 24px;
+}
+
+.team-list :first-child {
+    width: calc((100% - 72px) / 4);
 }
 
 .team-foto {
@@ -272,9 +270,8 @@ ul, ol {
     row-gap: 48px;
 }
 
-.foto {
+.portfolio-list :first-child {
     width: calc((100% - 48px) / 3);
-    display: block;
 }
 
 .porfolio-name {
