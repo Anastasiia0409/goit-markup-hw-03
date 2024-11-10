@@ -29,6 +29,11 @@ ul, ol {
     border-bottom:  1px solid #e7e9fc;
 }
 
+.header-title {
+    display: flex;
+    align-items: center;
+}
+
 .header-logo {
     font-family: 'Raleway', sans-serif;
     color: #4d5ae5;
@@ -38,6 +43,10 @@ ul, ol {
     letter-spacing: 0.03em;
     text-decoration: none;
     text-transform: uppercase;
+    margin-right: 76px;
+}
+
+.header-logo:nth-child(1) {
     display: flex;
     width: 1158px; 
 }
@@ -146,12 +155,20 @@ ul, ol {
     padding: 120px 0;
 }
 
-.advantage-list {
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.advantages-list {
     display: flex;
     gap: 24px;
 }
 
-.advantage-item {
+.advantages-item {
     width: calc((100% - 72px) / 4); 
 }
 
@@ -255,8 +272,9 @@ ul, ol {
     row-gap: 48px;
 }
 
-.portfolio-foto {
-    width: calc((100% - 48px) / 3); 
+.foto {
+    width: calc((100% - 48px) / 3);
+    display: block;
 }
 
 .porfolio-name {
