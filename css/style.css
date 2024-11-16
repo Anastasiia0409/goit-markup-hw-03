@@ -182,28 +182,28 @@ img {
 
 .advantages-list {
     display: flex;
-    gap: 24px;
 }
 
 .advantages-item {
-    width: 264px;
     width: calc((100% - 72px) / 4);
+    margin-right: 24px;
+}
+
+.address-item:last-child {
+    margin-right: 0;
 }
 
 .advantages-subtitle {
     color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
-    line-height: 24px;
     letter-spacing: 0.02em;
-    text-align: center;
     margin-bottom: 8px;
     line-height: 1.2;
 }
 
 .advantages-text {
     color: #434455;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -223,7 +223,6 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    margin-top: 120px;
     margin-bottom: 72px;
 }
 
