@@ -10,6 +10,7 @@ h1, h2, h3, h4 h5, h6, p {
 
 a {
     text-decoration: none;
+    display: inline-block;
 }
 
 ul, ol {
@@ -20,7 +21,6 @@ ul, ol {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    display: flex;
 }
 
 img {
@@ -342,5 +342,4 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: inline-block;
 }
