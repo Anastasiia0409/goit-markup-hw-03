@@ -318,6 +318,7 @@ img {
     letter-spacing: 0.03em;
     margin: 120px 0;
     padding: 100px 0;
+    display: inline-block;
 }
 
 .logo-footer {
@@ -342,4 +343,5 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: inline-block;
 }
