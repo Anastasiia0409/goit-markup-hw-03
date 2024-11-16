@@ -5,7 +5,7 @@ body {
 }
 
 h1, h2, h3, h4 h5, h6, p {
-    margin: 0%;
+    margin: 0;
 }
 
 a {
@@ -14,21 +14,24 @@ a {
 
 ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 1158px;
+    max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-}
-
-.header .container {
-    display: flex;
 }
 
 img {
     display: block;
     max-width: 100%;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
 }
 
 .header {
@@ -43,32 +46,30 @@ img {
     align-items: center;
 }
 
-.header-logo {
+.header_logo {
     font-family: 'Raleway', sans-serif;
     color: #4d5ae5;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-decoration: none;
     text-transform: uppercase;
     margin-right: 76px;
 }
 
-.header-logo_accent {
+.header_logo_accent {
     color: #2e2f42;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-    text-decoration: none;
     margin-right: 76px;
+    padding: 24px 0;
 }
 
-.header-item {
+.header-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
     gap: 40px;
 }
 
@@ -78,8 +79,8 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-decoration: none;
     padding: 24px 0;
+    display: block;
 }
 
 .header_link:hover {
@@ -90,21 +91,24 @@ img {
     color:  #404bbf;
 }
 
-.address-item {
+.address {
     font-style: normal;
+    margin-left: auto;
+}
+
+.address-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
     gap: 40px;
 }
 
 .address_link {
     color: #434455;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-decoration: none;
+    display: block;
+    padding: 24px 0;
 }
 
 .address:hover {
@@ -117,7 +121,6 @@ img {
 
 .hero-section{
     background-color: #2E2F42;
-    height: 600px;
     padding: 188px 0;
 }
 
@@ -128,11 +131,10 @@ img {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    text-transform: capitalize;
-    max-width: 496px; 
-    align-items: center;
-    margin: auto;
     margin-bottom: 48px;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button {
@@ -149,10 +151,8 @@ img {
     height: 56px;
     border-radius: 4px;
     padding: 16px 32px;
-    margin-top: 48px;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .button:hover {
@@ -182,16 +182,13 @@ img {
 
 .advantages-list {
     display: flex;
+    align-items: center;
     gap: 24px;
+    justify-content: center;
 }
 
 .advantages-item {
-    flex-basis: calc((100% - 72px) / 4);
-    margin-right: 24px;
-}
-
-.address-item:last-child {
-    margin-right: 0;
+    width: calc((100% - 72px) / 4);
 }
 
 .advantages-subtitle {
@@ -205,7 +202,6 @@ img {
 
 .advantages-text {
     color: #434455;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -213,13 +209,11 @@ img {
 
 .team-section {
     background-color: #F4F4FD;
-    height: 732px;
     padding: 120px 0;
 }
 
 .team-title {
     color: #2E2F42;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -230,17 +224,17 @@ img {
 
 .team-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     gap: 24px;
+    align-items: center;
 }
 
 .team-foto {
     background-color:  #FFFFFF;  
     border-radius: 0px 0px 4px 4px; 
-    width: 264;
-    min-height: 380px;
-    flex-basis: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / 4);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-caption {
@@ -259,7 +253,6 @@ img {
 
 .team-subtitle {
    color: #434455;
-   font-weight: 400;
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
@@ -267,17 +260,11 @@ img {
 }
 
 .portfolio-section {
-    margin: 120px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-top: 120px; 
-    padding-bottom: 120px; 
+    padding: 120px 0;
 }
 
 .portfolio-title {
     color: #2E2F42;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -298,15 +285,9 @@ img {
     width: calc((100% - 48px) / 3);
 }
 
-.portfolio .container {
-    padding-bottom: 120px;
-}
-
-.porfolio-name {
+.portfolio-item-container {
     padding: 32px 16px;
-    border-bottom: 1px solid #E7E9FC;
-    border-left: 1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
+    border: 1px solid #e7e9fc;
 }
 
 .portfolio-caption {
@@ -321,7 +302,6 @@ img {
 
 .portfolio-subtitle {
     color: #434455;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -330,11 +310,6 @@ img {
 
 .footer {
     background-color: #2E2F42;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    margin: 120px 0;
     padding: 100px 0;
 }
 
@@ -356,8 +331,8 @@ img {
 
 .footer_text{
     color: #F4F4FD;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
 }
