@@ -182,10 +182,11 @@ img {
 
 .advantages-list {
     display: flex;
+    gap: 24px;
 }
 
 .advantages-item {
-    flex-basis: calc((100% -3 * 24px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
     margin-right: 24px;
 }
 
@@ -204,6 +205,7 @@ img {
 
 .advantages-text {
     color: #434455;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -238,7 +240,7 @@ img {
     border-radius: 0px 0px 4px 4px; 
     width: 264;
     min-height: 380px;
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-caption {
